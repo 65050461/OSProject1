@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="stylePayment.css">
+    <!-- Random ID -->
+    <script src="https://randojs.com/1.0.0.js"></script>
+    <script>
+        function showID(){
+                document.getElementById("ID").innerHTML = rando(0, 10000);
+        }
+    </script>
+    <title>Ticket Generator</title>
+</head>
+<body onload=showID()>
+    <p class="text">
+        <h1>Ticket Generator</h1> 
+        <h2><div id="ID"></div></h2>
+        <h2>Selected Movie : <span id="selectedMovie"></span></h2>
+        <h2>Total Price <span id="total">0</span> Baht</h2> 
+        <h2>Seat No. <span id="count">0</span></h2>
+    </p>
+    <button id="paymentButton" class="standard-button">
+        <a type="button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank">Facebook</a>
+    </button>
+    <button id="paymentButton" class="standard-button">
+        <a type="button" href="https://twitter.com/intent/tweet" target="_blank">Twitter</a>
+    </button>
+    <script src="payment.js"></script>
+</body>
+</html>
